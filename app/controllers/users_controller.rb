@@ -11,9 +11,15 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(user_params)
-    render json:@user
+    @user = User.create(email:params[:email], username:params[:username],password:params[:password])
+    if @user.valid? ## Authenticate is a part of has_secure_password
+      token = issue_token({jwt: @user.id})
+        render json: {jwt: token, user:@user}
+      else
+          render json: {error: "Username is taken" }, status: 401
+      end
   end
+
 
 
 
