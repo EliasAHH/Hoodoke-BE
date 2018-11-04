@@ -3,21 +3,21 @@ class Song < ApplicationRecord
   has_many :users, through: :scores
 
   def artist_slug
-    self.artist_name.split(" ").join("_")
+    self.artist_name.downcase.split(" ").join("_")
   end
 
   def song_slug
-    self.song_name.split(" ").join("_")
+    self.song_name.downcase.split(" ").join("_")
   end
 
 
   def to_show
     {
-      artist: self.artist_name,
-      song: self.song_name,
+      artist_name: self.artist_name,
+      song_name: self.song_name,
       path: self.path,
-      artist_slug: self.artist_slug,
-      song_slug: self.song_slug
+      artist: self.artist_slug,
+      song: self.song_slug
     }
   end
 end
