@@ -8,5 +8,5 @@
 
 
 User.create(email:"juan@juan.com",username:"Juan",password:"test")
-Song.create(artist_name:"Katy Perry", song_name:"Fireworks", path:"/static/media/firework-katy_perry.80a827eb.lrc")
+Song.create(artist_name:"Katy Perry", song_name:"Firework", path:"/static/media/firework-katy_perry.80a827eb.lrc")
 Song.create(artist_name:"3 Doors Down", song_name:"Here without you", path:"/static/media/here_without_you-3_doors_down.1d4e92e2.lrc")
