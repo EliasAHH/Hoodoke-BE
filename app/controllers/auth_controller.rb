@@ -11,7 +11,6 @@ class AuthController < ApplicationController
   end
 
 
-
   def show
     token = request.headers["Authorization"]
     decoded_token = decode(token)
