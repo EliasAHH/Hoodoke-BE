@@ -1,5 +1,7 @@
 class SongSerializer < ActiveModel::Serializer
-  attributes :artist_name, :song_name, :path,:artist,:song
+  attributes :id, :artist_name, :song_name, :path,:artist,:song
+
+  # adding a high score later on
 
   def artist
     object.artist_slug

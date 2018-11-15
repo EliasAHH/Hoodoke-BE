@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   has_many :scores
   has_many :songs, through: :scores
+
+
   has_secure_password
 
 
@@ -15,9 +17,9 @@ class User < ApplicationRecord
   validates :password, length: { in: 6..20 }
   validates :password, :format => { with: /\A[a-zA-Z0-9]*\z/ , :message => 'no special characters, only letters and numbers' }
 
+end 
+
 
 
 
   # validates :email, :format => { with: /\A[a-zA-Z0-9]*\z/ , :message => 'no special characters, only letters and numbers' }
-
-end

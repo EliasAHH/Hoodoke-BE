@@ -1,8 +1,8 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :username
+  attributes :id,:username
   has_many :scores
   has_many :songs , through: :scores
 
 
-  
+
 end
