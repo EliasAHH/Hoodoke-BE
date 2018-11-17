@@ -27,7 +27,7 @@ Song.create(artist_name:"ABBA", song_name:"Dancing Queen", path:"/static/media/d
 
 Song.create(artist_name:"Cascada", song_name:"Everytime We Touch", path:"/static/media/everytime_we_touch-cascada.f6e7c494.lrc")
 
-Song.create(artist_name:"Alicia Keys", song_name:"If i aint got you", path:"/static/media/if_i_aint_got_you-alicia_keys.164c6b16.lrc")
+Song.create(artist_name:"Alicia Keys", song_name:"If i aint got you", path:"/static/media/if_i_aint_got_you-alicia_keys.5b87ad1b.lrc")
 
 Song.create(artist_name:"Beyonce", song_name:"Irreplaceable", path:"/static/media/irreplaceable-beyonce.58ba2bda.lrc")
 
@@ -47,7 +47,7 @@ Song.create(artist_name:"Adele", song_name:"Set Fire to the Rain", path:"/static
 
 Song.create(artist_name:"My Chemical Romance", song_name:"Sing", path:"/static/media/sing-my_chemical_romance.62c0176c.lrc")
 
-Song.create(artist_name:"Amy Winehouse", song_name:"Valerie", path:"/static/media/valerie-amy_winehouse.3b6f8d2e.lrc")
+Song.create(artist_name:"Amy Winehouse", song_name:"Valerie", path:"/static/media/valerie-amy_winehouse.6c302bf8.lrc")
 
 Song.create(artist_name:"Maui", song_name:"Your Welcome", path:"/static/media/your_welcome-maui.c260516f.lrc")
 
