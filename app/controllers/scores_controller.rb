@@ -11,7 +11,7 @@ class ScoresController < ApplicationController
 
   def create
     @score =  Score.create(user_id:params[:user_id],song_id:params[:song_id], score:params[:score])
-    render json: @score
+    render json: @score.score_show
   end
 
   private

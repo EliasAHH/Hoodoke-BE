@@ -11,13 +11,17 @@ class Song < ApplicationRecord
   end
 
 
-  def to_show
-    {
-      artist_name: self.artist_name,
-      song_name: self.song_name,
-      path: self.path,
-      artist: self.artist_slug,
-      song: self.song_slug
-    }
-  end
+  # def to_show
+  #   {
+  #     id: self.id,
+  #     artist_name: self.artist_name,
+  #     song_name: self.song_name,
+  #     path: self.path,
+  #     artist: self.artist_slug,
+  #     song: self.song_slug,
+  #     scores: self.scores,
+  #     users: self.users
+  #
+  #   }
+  # end
 end

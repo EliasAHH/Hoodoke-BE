@@ -1,3 +1,10 @@
 class ScoreSerializer < ActiveModel::Serializer
-  attributes :score
+  attributes :score , :user
+
+
+  def user
+    {
+      user: object.user.username
+    }
+  end
 end
