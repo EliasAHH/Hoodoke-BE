@@ -52,3 +52,6 @@ Song.create(artist_name:"Amy Winehouse", song_name:"Valerie", path:"/static/medi
 Song.create(artist_name:"Maui", song_name:"Your Welcome", path:"/static/media/your_welcome-maui.c260516f.lrc")
 
 Song.create(artist_name:"Cher", song_name:"Believe", path:"/static/media/believe-cher.75a4715b.lrc")
+
+
+Score.create(user_id:1,song_id:1,score:10000)
